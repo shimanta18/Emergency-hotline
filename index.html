@@ -38,12 +38,13 @@
         <p class="text-sm">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
     </header>
 <!--Main section-->
-<main class="container mx-auto p-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+<main class="container mx-auto  grid grid-cols-1 md:grid-cols-[3fr_1fr] gap-3">
 <!--c1-->
+<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
     <div class="bg-white shadow-lg p-6">
             <div>
                 <img src="assets/emergency.png" alt="" class="w-8 h-8 bg-pink-200 rounded-lg ">
-                <div class="flex items-center ml-60 px-3">
+                <div class="flex items-center ml-45 px-3">
                     <i class="fa-regular fa-heart"></i>
                     <span id="like-count">0</span>
                 </div>
@@ -67,7 +68,7 @@
     <div class="bg-white shadow-lg p-6">
             <div>
                 <img src="assets/emergency.png" alt="" class="w-8 h-8 bg-pink-200 rounded-lg ">
-                <div class="flex items-center ml-60 px-3">
+                <div class="flex items-center ml-45 px-3">
                     <i class="fa-regular fa-heart"></i>
                     <span id="like-count">0</span>
                 </div>
@@ -90,7 +91,7 @@
     <div class="bg-white shadow-lg p-6">
             <div>
                 <img src="assets/emergency.png" alt="" class="w-8 h-8 bg-pink-200 rounded-lg ">
-                <div class="flex items-center ml-60 px-3">
+                <div class="flex items-center ml-45 px-3">
                     <i class="fa-regular fa-heart"></i>
                     <span id="like-count">0</span>
                 </div>
@@ -114,7 +115,7 @@
     <div class="bg-white shadow-lg p-6">
             <div>
                 <img src="assets/emergency.png" alt="" class="w-8 h-8 bg-pink-200 rounded-lg ">
-                <div class="flex items-center ml-60 px-3">
+                <div class="flex items-center  px-3">
                     <i class="fa-regular fa-heart"></i>
                     <span id="like-count">0</span>
                 </div>
@@ -139,7 +140,7 @@
     <div class="bg-white shadow-lg p-6">
             <div>
                 <img src="assets/emergency.png" alt="" class="w-8 h-8 bg-pink-200 rounded-lg ">
-                <div class="flex items-center ml-60 px-3">
+                <div class="flex items-center ml-45 px-3">
                     <i class="fa-regular fa-heart"></i>
                     <span id="like-count">0</span>
                 </div>
@@ -164,7 +165,7 @@
 <div class="bg-white shadow-lg p-6">
             <div>
                 <img src="assets/emergency.png" alt="" class="w-8 h-8 bg-pink-200 rounded-lg ">
-                <div class="flex items-center ml-60 px-3">
+                <div class="flex items-center ml-45 px-3">
                     <i class="fa-regular fa-heart"></i>
                     <span id="like-count">0</span>
                 </div>
@@ -189,7 +190,7 @@
 <div class="bg-white shadow-lg p-6">
             <div>
                 <img src="assets/emergency.png" alt="" class="w-8 h-8 bg-pink-200 rounded-lg ">
-                <div class="flex items-center ml-60 px-3">
+                <div class="flex items-center ml-45 px-3">
                     <i class="fa-regular fa-heart"></i>
                     <span id="like-count">0</span>
                 </div>
@@ -214,7 +215,7 @@
 <div class="bg-white shadow-lg p-6">
             <div>
                 <img src="assets/emergency.png" alt="" class="w-8 h-8 bg-pink-200 rounded-lg ">
-                <div class="flex items-center ml-60 px-3">
+                <div class="flex items-center ml-45 px-3">
                     <i class="fa-regular fa-heart"></i>
                     <span id="like-count">0</span>
                 </div>
@@ -239,7 +240,7 @@
 <div class="bg-white shadow-lg p-6">
             <div>
                 <img src="assets/emergency.png" alt="" class="w-8 h-8 bg-pink-200 rounded-lg ">
-                <div class="flex items-center ml-60 px-3">
+                <div class="flex items-center ml-45 px-3">
                     <i class="fa-regular fa-heart"></i>
                     <span id="like-count">0</span>
                 </div>
@@ -257,6 +258,15 @@
             <a href="" onclick="" class="mt-3 px-10 py-1 rounded-lg bg-green-700 text-white ">📞Call</a>
         </div>
     </div>
+</div>
+
+  <aside class="bg-white rounded-lg shadow p-4 flex flex-col ">
+    <div class="flex items-center justify-between mb-4">
+        <h2 class="text-lg font-semibold">Call History</h2>
+        <button onclick="clearHistroy()" class="px-3 py-1 bg-green-500 text-white rounded hover:bg-green-600 text-sm">Clear</button>
+    </div>
+  </aside>
 </main>
+
 </body>
 </html>
