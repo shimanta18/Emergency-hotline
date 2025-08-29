@@ -66,3 +66,38 @@ function renderHistory() {
 
 // ====== INIT ON LOAD ======
 document.addEventListener("DOMContentLoaded", renderHistory);
+
+//heart//
+let heartCount=0;
+function incrementHeart() {
+  heartCount++;
+  const heartEl = document.getElementById("nav-heart-count")
+  if(heartEl){
+    heartEl.textContent = heartCount;
+  }
+}
+
+//coin//
+let coinCount = 100;
+function updateCoinDisplay() {
+
+  const coinEl = document.getElementById("nav-coin-count")
+  if(coinEl){
+    coinEl.textContent = coinCount;
+  }
+}
+
+function handleCall(name,number){
+  if(coinCount<20){
+    alert("Not enough coins to make a call. You need at least 20 coins.");
+    return;
+  }
+  coinCount -=20;
+  updateCoinDisplay();
+  addToHistory(name,number);
+}
+
+document.addEventListener('DOMContentLoaded',() => {
+  updateCoinDisplay();
+  renderHistory();
+});

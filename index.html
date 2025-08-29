@@ -19,11 +19,11 @@
 <!--nav heart icon section-->
     <div class="flex justify-between ml-[60rem] gap-2">
         <div class="flex items-center space-x-1 bg-green-100 rounded-lg p-4 px-3 py-1">
-            <span>0</span>
+            <span id="nav-heart-count">0</span>
             <span>💗</span>
         </div>
         <div class="flex items-center space-x-1 bg-green-100 rounded-lg p-4 px-3 py-1">
-            <span>100</span>
+            <span id="nav-coin-count">100</span>
             <span>
                 <img src="assets/coin.png" alt="" class="w-8 "></div>
             </span>
@@ -44,8 +44,8 @@
     <div class="bg-white shadow-lg p-6">
             <div>
                 <img src="assets/emergency.png" alt="" class="w-8 h-8 bg-pink-200 rounded-lg ">
-                <div class="flex items-center ml-60 px-3">
-                    <i class="fa-regular fa-heart"></i>
+                <div class="flex items-center ml-60 px-3 cursor-pointer" onclick="incrementHeart()">
+                    <i class="fa-regular fa-heart  hover:scale-110 transition-transform"></i>
                 </div>
             </div>
         <h2 class="text-bold text-lg">National Emergency Number</h2>
@@ -56,9 +56,9 @@
 
         <div class="flex gap-2 ">
             <button href="tel:999" onclick="copyNumber('999')" 
-            class="flex items-center gap-1 bg-white shadow-lg border border-gray-300 text-gray-700 px-10 py-1 mt-3 rounded-lg">Copy
+            class="flex items-center gap-1 bg-white shadow-lg border border-gray-300 text-gray-700 px-10 py-1 mt-3 rounded-lg hover:bg-black hover:text-white duration-200 ease-in-out">Copy
             </button>
-            <a href="tel:999" onclick="addToHistory('National Emergency Number','999')" class="mt-3 px-10 py-1 rounded-lg bg-green-700 text-white ">📞Call</a>
+            <a href="tel:999" onclick="handleCall('National Emergency Number','999')" class="mt-3 px-10 py-1 rounded-lg bg-green-700 text-white hover:bg-gray-200 hover:text-black transition duration-200 ease-in-out">📞Call</a>
         </div>
     </div>
 
@@ -67,8 +67,8 @@
     <div class="bg-white shadow-lg p-6">
             <div>
                 <img src="assets/police.png" alt="" class="w-8 h-8 rounded-lg bg-blue-200">
-                <div class="flex items-center ml-45 px-3">
-                    <i class="fa-regular fa-heart"></i>
+                <div class="flex items-center ml-60 px-3" onclick="incrementHeart()">
+                    <i class="fa-regular fa-heart  hover:scale-110 transition-transform"></i>
                 </div>
             </div>
         <h2 class="text-bold text-lg">Police Helpline Number</h2>
@@ -79,9 +79,9 @@
 
         <div class="flex gap-2 ">
             <button href="tel:999" onclick="copyNumber('999')" 
-            class="flex items-center gap-1 bg-white shadow-lg border border-gray-300 text-gray-700 px-10 py-1 mt-3 rounded-lg">Copy
+            class="flex items-center gap-1 bg-white shadow-lg border border-gray-300 text-gray-700 px-10 py-1 mt-3 rounded-lg hover:bg-black hover:text-white duration-200 ease-in-out">Copy
             </button>
-            <a href="tel:999" onclick="addToHistory('Police Helpline Number','999')" class="mt-3 px-10 py-1 rounded-lg bg-green-700 text-white ">📞Call</a>
+            <a href="tel:999" onclick="handleCall('Police Helpline Number','999')" class="mt-3 px-10 py-1 rounded-lg bg-green-700 text-white hover:bg-gray-200 hover:text-black transition duration-200 ease-in-out">📞Call</a>
         </div>
     </div>
 
@@ -89,8 +89,8 @@
     <div class="bg-white shadow-lg p-6">
             <div>
                 <img src="assets/fire-service.png" alt="" class="w-8 h-8 bg-pink-200 rounded-lg ">
-                <div class="flex items-center ml-60 px-3">
-                    <i class="fa-regular fa-heart"></i>
+                <div class="flex items-center ml-60 px-3"onclick="incrementHeart()">
+                    <i class="fa-regular fa-heart  hover:scale-110 transition-transform"></i>
 
                 </div>
             </div>
@@ -102,9 +102,9 @@
 
         <div class="flex gap-2 ">
             <button href="tel:999" onclick="copyNumber('999')" 
-            class="flex items-center gap-1 bg-white shadow-lg border border-gray-300 text-gray-700 px-10 py-1 mt-3 rounded-lg">Copy
+            class="flex items-center gap-1 bg-white shadow-lg border border-gray-300 text-gray-700 px-10 py-1 mt-3 rounded-lg hover:bg-black hover:text-white duration-200 ease-in-out">Copy
             </button>
-            <a href="tel:999" onclick="addToHistory('Fire Service Number','999')" class="mt-3 px-10 py-1 rounded-lg bg-green-700 text-white ">📞Call</a>
+            <a href="tel:999" onclick="handleCall('Fire Service Number','999')" class="mt-3 px-10 py-1 rounded-lg bg-green-700 text-white hover:bg-gray-200 hover:text-black transition duration-200 ease-in-out">📞Call</a>
         </div>
     </div>
 
@@ -113,8 +113,8 @@
     <div class="bg-white shadow-lg p-6">
             <div>
                 <img src="assets/ambulance.png" alt="" class="w-8 h-8 bg-pink-200 rounded-lg ">
-                <div class="flex items-center ml-60 px-3">
-                    <i class="fa-regular fa-heart"></i>
+                <div class="flex items-center ml-60 px-3"onclick="incrementHeart()">
+                    <i class="fa-regular fa-heart hover:scale-110 transition-transform"></i>
                 </div>
             </div>
         <h2 class="text-bold text-lg">Ambulance Service</h2>
@@ -125,9 +125,9 @@
 
         <div class="flex gap-2 ">
             <button href="tel:1994-999999" onclick="copyNumber('1994-999999')" 
-            class="flex items-center gap-1 bg-white shadow-lg border border-gray-300 text-gray-700 px-10 py-1 mt-3 rounded-lg">Copy
+            class="flex items-center gap-1 bg-white shadow-lg border border-gray-300 text-gray-700 px-10 py-1 mt-3 rounded-lg hover:bg-black hover:text-white duration-200 ease-in-out">Copy
             </button>
-            <a href="tel:1994-999999" onclick="addToHistory('Ambulance Service','1994-999999')" class="mt-3 px-10 py-1 rounded-lg bg-green-700 text-white ">📞Call</a>
+            <a href="tel:1994-999999" onclick="handleCall('Ambulance Service','1994-999999')" class="mt-3 px-10 py-1 rounded-lg bg-green-700 text-white hover:bg-gray-200 hover:text-black transition duration-200 ease-in-out">📞Call</a>
         </div>
     </div>
 
@@ -137,8 +137,8 @@
     <div class="bg-white shadow-lg p-6">
             <div>
                 <img src="assets/emergency.png" alt="" class="w-8 h-8 bg-pink-200 rounded-lg ">
-                <div class="flex items-center ml-45 px-3">
-                    <i class="fa-regular fa-heart"></i>
+                <div class="flex items-center ml-60 px-3"onclick="incrementHeart()">
+                    <i class="fa-regular fa-heart hover:scale-110 transition-transform"></i>
                 </div>
             </div>
         <h2 class="text-bold text-lg">Women & Child Helpline</h2>
@@ -149,9 +149,9 @@
 
         <div class="flex gap-2 ">
             <button href="tel:109" onclick="copyNumber('109')" 
-            class="flex items-center gap-1 bg-white shadow-lg border border-gray-300 text-gray-700 px-10 py-1 mt-3 rounded-lg">Copy
+            class="flex items-center gap-1 bg-white shadow-lg border border-gray-300 text-gray-700 px-10 py-1 mt-3 rounded-lg hover:bg-black hover:text-white duration-200 ease-in-out">Copy
             </button>
-            <a href="tel:109" onclick="addToHistory('Women & Child Helpline','109')" class="mt-3 px-10 py-1 rounded-lg bg-green-700 text-white ">📞Call</a>
+            <a href="tel:109" onclick="handleCall('Women & Child Helpline','109')" class="mt-3 px-10 py-1 rounded-lg bg-green-700 text-white hover:bg-gray-200 hover:text-black transition duration-200 ease-in-out">📞Call</a>
         </div>
     </div>
 
@@ -161,8 +161,8 @@
 <div class="bg-white shadow-lg p-6">
             <div>
                 <img src="assets/emergency.png" alt="" class="w-8 h-8 bg-pink-200 rounded-lg ">
-                <div class="flex items-center ml-45 px-3">
-                    <i class="fa-regular fa-heart"></i>
+                <div class="flex items-center ml-60 px-3"onclick="incrementHeart()">
+                    <i class="fa-regular fa-heart hover:scale-110 transition-transform"></i>
                 </div>
             </div>
         <h2 class="text-bold text-lg">Anti-Corruption Helpline</h2>
@@ -173,9 +173,9 @@
 
         <div class="flex gap-2 ">
             <button href="tel:106" onclick="copyNumber('106')" 
-            class="flex items-center gap-1 bg-white shadow-lg border border-gray-300 text-gray-700 px-10 py-1 mt-3 rounded-lg">Copy
+            class="flex items-center gap-1 bg-white shadow-lg border border-gray-300 text-gray-700 px-10 py-1 mt-3 rounded-lghover:bg-black hover:text-white duration-200 ease-in-out ">Copy
             </button>
-            <a href="tel:106" onclick="addToHistory('Anti-Corruption Helpline','106')" class="mt-3 px-10 py-1 rounded-lg bg-green-700 text-white ">📞Call</a>
+            <a href="tel:106" onclick="handleCall('Anti-Corruption Helpline','106')" class="mt-3 px-10 py-1 rounded-lg bg-green-700 text-white hover:bg-gray-200 hover:text-black transition duration-200 ease-in-out">📞Call</a>
         </div>
     </div>
 
@@ -185,8 +185,8 @@
 <div class="bg-white shadow-lg p-6">
             <div>
                 <img src="assets/emergency.png" alt="" class="w-8 h-8 bg-pink-200 rounded-lg ">
-                <div class="flex items-center ml-45 px-3">
-                    <i class="fa-regular fa-heart"></i>
+                <div class="flex items-center ml-60 px-3"onclick="incrementHeart()">
+                    <i class="fa-regular fa-heart hover:scale-110 transition-transform "></i>
                 </div>
             </div>
         <h2 class="text-bold text-lg">Electricity Helpline</h2>
@@ -197,9 +197,9 @@
 
         <div class="flex gap-2 ">
             <button href="tel:16216" onclick="copyNumber('16216')" 
-            class="flex items-center gap-1 bg-white shadow-lg border border-gray-300 text-gray-700 px-10 py-1 mt-3 rounded-lg">Copy
+            class="flex items-center gap-1 bg-white shadow-lg border border-gray-300 text-gray-700 px-10 py-1 mt-3 rounded-lg hover:bg-black hover:text-white duration-200 ease-in-out">Copy
             </button>
-            <a href="tel:16216" onclick="addToHistory('Electricity Helpline','16216')" class="mt-3 px-10 py-1 rounded-lg bg-green-700 text-white ">📞Call</a>
+            <a href="tel:16216" onclick="handleCall('Electricity Helpline','16216')" class="mt-3 px-10 py-1 rounded-lg bg-green-700 text-white hover:bg-gray-200 hover:text-black transition duration-200 ease-in-out">📞Call</a>
         </div>
     </div>
 
@@ -209,8 +209,8 @@
 <div class="bg-white shadow-lg p-6">
             <div>
                 <img src="assets/emergency.png" alt="" class="w-8 h-8 bg-pink-200 rounded-lg ">
-                <div class="flex items-center ml-45 px-3">
-                    <i class="fa-regular fa-heart"></i>
+                <div class="flex items-center ml-60 px-3"onclick="incrementHeart()">
+                    <i class="fa-regular fa-heart hover:scale-110 transition-transform"></i>
                 </div>
             </div>
         <h2 class="text-bold text-lg">Brac Helpline</h2>
@@ -221,9 +221,9 @@
 
         <div class="flex gap-2 ">
             <button href="tel:16445" onclick="copyNumber('16445')" 
-            class="flex items-center gap-1 bg-white shadow-lg border border-gray-300 text-gray-700 px-10 py-1 mt-3 rounded-lg">Copy
+            class="flex items-center gap-1 bg-white shadow-lg border border-gray-300 text-gray-700 px-10 py-1 mt-3 rounded-lg hover:bg-black hover:text-white duration-200 ease-in-out">Copy
             </button>
-            <a href="tel:16445" onclick="addToHistory('Brac Helpline','16445')" class="mt-3 px-10 py-1 rounded-lg bg-green-700 text-white ">📞Call</a>
+            <a href="tel:16445" onclick="handleCall('Brac Helpline','16445')" class="mt-3 px-10 py-1 rounded-lg bg-green-700 text-white hover:bg-gray-200 hover:text-black transition duration-200 ease-in-out">📞Call</a>
         </div>
     </div>
 
@@ -233,8 +233,8 @@
 <div class="bg-white shadow-lg p-6">
             <div>
                 <img src="assets/emergency.png" alt="" class="w-8 h-8 bg-pink-200 rounded-lg ">
-                <div class="flex items-center ml-45 px-3">
-                    <i class="fa-regular fa-heart"></i>
+                <div class="flex items-center ml-60 px-3" onclick="incrementHeart()">
+                    <i class="fa-regular fa-heart hover:scale-110 transition-transform"></i>
                     
                 </div>
             </div>
@@ -246,9 +246,9 @@
 
         <div class="flex gap-2 ">
             <button href="tel:163" onclick="copyNumber('163')" 
-            class="flex items-center gap-1 bg-white shadow-lg border border-gray-300 text-gray-700 px-10 py-1 mt-3 rounded-lg">Copy
+            class="flex items-center gap-1 bg-white shadow-lg border border-gray-300 text-gray-700 px-10 py-1 mt-3 rounded-lg hover:bg-black hover:text-white duration-200 ease-in-out">Copy
             </button>
-            <a href="tel:163" onclick="addToHistory('Bangladesh Railway Helpline','163')" class="mt-3 px-10 py-1 rounded-lg bg-green-700 text-white ">📞Call</a>
+            <a href="tel:163" onclick="handleCall('Bangladesh Railway Helpline','163')" class="mt-3 px-10 py-1 rounded-lg bg-green-700 text-white hover:bg-gray-200 hover:text-black transition duration-200 ease-in-out">📞Call</a>
         </div>
     </div>
 </div>
